@@ -13,7 +13,8 @@ services:
       - ALL
 
     ports:
-      - "6567:6567"
+      - "6567:6567/udp"
+      - "6567:6567/tcp"
     restart: always
 
     # map config to host machine
